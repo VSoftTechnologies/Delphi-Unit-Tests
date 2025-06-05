@@ -164,7 +164,7 @@ begin
         testexecutable = %SOURCEROOT%\\Output\\DelphiUnitTests.exe
         timeoutlength = 2
         useerrordialogmonitor = false
-        xmlloggertype = nunit
+        xmlloggertype = junit
         xmlreportfile = %SOURCEROOT%\\Output\\dunitxresults.xml
       end
     end
