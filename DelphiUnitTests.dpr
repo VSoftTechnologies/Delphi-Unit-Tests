@@ -63,6 +63,7 @@ begin
     nunitLogger := TDUnitXXMLNUnitFileLogger.Create(TDUnitX.Options.XMLOutputFile);
     runner.AddLogger(nunitLogger);
 
+
     //Run tests
     results := runner.Execute;
     if not results.AllPassed then
