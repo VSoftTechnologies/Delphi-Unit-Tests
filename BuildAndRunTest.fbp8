@@ -1,0 +1,179 @@
+﻿project
+begin
+  projectid = {35880C4C-5105-4B0A-9CBB-0D12604CCEA6}
+  target
+  begin
+    name = Default
+    targetid = {96830A2A-AE49-430A-AD06-CA2F2CBFD662}
+    rootaction
+    begin
+      action.dpm.restore
+      begin
+        actiontypeid = {17B8180A-B96F-4BA3-BCA1-E2FD9132113C}
+        customactionname = "DPM Restore"
+        enabletimeout = false
+        id = {7947ED4C-2914-4AC6-8ACF-703377FB8473}
+        impersonateusenetcredonly = false
+        impersonateuser = false
+        terminateontimeout = true
+        timeoutlength = 2
+        as.projectpath = %SOURCEROOT%\\DelphiUnitTests.dproj
+        as.compilerversion = 12.0
+        as.verbosity = Quiet
+        as.nobanner = False
+      end
+      action.delphi.build
+      begin
+        allowimplicitimport = true
+        alwaysuseconditionalsfromdof = false
+        autoincbuild = true
+        autoupdatefileversion = true
+        autoupdateproductversion = false
+        buildall = true
+        buildversion = 0
+        codepage = 1252
+        compileprojectresources = false
+        compileridl = true
+        configname = Release
+        debugversionnumbers = false
+        delphiversion = Delphi12
+        enabletimeout = false
+        eurekalogverboselogging = false
+        frameworktype = VCL
+        hintsaserror = false
+        iconfile = C:\\Source\\Github\\VSoft\\Delphi-Unit-Tests\\mainicon.ico
+        id = {1E01559C-2861-4FBE-83CB-09F0F55FF569}
+        includecompiledate = false
+        includemanifest = false
+        includeverinfo = false
+        isdebug = false
+        isdll = false
+        isprerelease = false
+        isprivate = false
+        isspecial = false
+        keepcfg = false
+        linkproductversiontofileversion = true
+        locale = 3081
+        majorversion = 0
+        minorversion = 0
+        noconfig = false
+        platform = Win32
+        platformsdktype = ProjectSDK
+        projectfile = C:\\Source\\Github\\VSoft\\Delphi-Unit-Tests\\DelphiUnitTests.dpr
+        regenerateresource = true
+        releaseversion = 0
+        resourcecompilertype = rcBorland
+        ridloutputsamefolder = true
+        startingdir = C:\\Source\\Github\\VSoft\\Delphi-Unit-Tests\\
+        timeoutlength = 1
+        updatedoffile = false
+        updatepackagesource = false
+        updateversioninfokeys = false
+        useeurekalogcompiler = false
+        usefastdcccompiler = false
+        useprojectsettings = []
+        usepropertyset = false
+        useversionfromdof = false
+        verboseoutput = false
+        versioninfokeys = "CompanyName\=" +
+                          "FileDescription\=" +
+                          "FileVersion\=0.0.0.0" +
+                          "InternalName\=" +
+                          "LegalCopyright\=" +
+                          "LegalTrademarks\=" +
+                          "OriginalFilename\=" +
+                          "ProductName\=" +
+                          "ProductVersion\=0.0.0.0" +
+                          "Comments\=" +
+                          ""
+        warningsaserror = false
+        workaroundd5bug = false
+        delphi.compileroptions
+        begin
+          alwaysuseconditionalsfromdof = false
+          alwaysusedelphilibrarypath = true
+          alwaysusedofsearchpath = true
+          assertions = true
+          assignableconst = false
+          booleval = false
+          compilerwarnings = "-w-UNSAFE_TYPE\=0" +
+                             "-w-UNSAFE_CODE\=0" +
+                             "-w-UNSAFE_CAST\=0" +
+                             ""
+          conditionals = CI
+          consoleapp = false
+          debuginfo = true
+          definitionsonly = true
+          emitruntimetypeinformation = false
+          exportallsymbols = false
+          extendedsyntax = true
+          externaltd32 = true
+          frameworktype = None
+          generatedocumentation = false
+          generatehpp = false
+          hugestrings = true
+          imagebase = 4194304
+          includenamespaces = false
+          includeremotesymbols = false
+          includetd32 = false
+          inlining = inOn
+          iochecking = true
+          librarypath = $(BDSLIB)\\$(Platform)\\release;$(BDSUSERDIR)\\Imports;$(BDSUSERDIR)\\Imports\\$(Platform);$(BDS)\\Imports;$(BDSCOMMONDIR)\\Dcp;$(BDS)\\include;C:\\Users\\vincent\\AppData\\Local\\Programs\\TestInsight\\Source
+          linkeroutput = 0
+          localsymbols = true
+          mapfile = 0
+          maxstacksize = 1048576
+          minstacksize = 16384
+          namespaceprefixes = System;Xml;Data;Datasnap;Web;Soap;Winapi;System.Win;Data.Win;Web.Win;Soap.Win;Bde;
+          openstrings = true
+          optimisation = true
+          outputdir = %SOURCEROOT%\\Output
+          overflowchecking = false
+          rangechecking = false
+          recordfieldalign = fa8
+          referenceinfo = true
+          safedivide = false
+          showhints = true
+          showwarnings = true
+          stackframes = false
+          stringchecks = true
+          typedpointers = false
+          unitaliases = WinTypes\=Windows;WinProcs\=Windows;DbiTypes\=BDE;DbiProcs\=BDE;DbiErrs\=BDE;
+          usedebugdcu = false
+          usepackages = false
+          varstringchecks = true
+        end
+      end
+      action.dunitx.execute
+      begin
+        continuafailiftestserror = false
+        continuafailiftestsfail = false
+        continuaquiet = false
+        continuaregisterresults = true
+        continuaverbose = false
+        enabletimeout = false
+        expandimpersonationtoken = false
+        failiftestfailures = false
+        id = {B919EF4A-3BBB-40A1-968C-0ECB1A3200C0}
+        impersonateusenetcredonly = false
+        impersonateuser = false
+        logprocessparameters = true
+        processoraffinity = 0
+        processpriority = tpNormal
+        terminateontimeout = false
+        testexecutable = %SOURCEROOT%\\Output\\DelphiUnitTests.exe
+        timeoutlength = 2
+        useerrordialogmonitor = false
+        xmlloggertype = nunit
+        xmlreportfile = %SOURCEROOT%\\Output\\dunitxresults.xml
+      end
+    end
+  end
+  variable
+  begin
+    defaultvalue = %FBPROJECTDIR%
+    name = SOURCEROOT
+    variablescope = vtProject
+    variabletype = btString
+  end
+end

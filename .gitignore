@@ -1,3 +1,6 @@
 ﻿*.dsv
 *.dsk
 Win32
+__history
+DelphiUnitTests.dproj.local
+*.identcache

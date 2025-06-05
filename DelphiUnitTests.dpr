@@ -40,6 +40,11 @@ begin
   try
     //Check command line options, will exit if invalid
     TDUnitX.CheckCommandLine;
+
+    {$IFNDEF CI}
+     TDunitX.Options.ExitBehavior := TDUnitXExitBehavior.Pause;
+    {$ENDIF}
+
     //Create the test runner
     runner := TDUnitX.CreateRunner;
     //Tell the runner to use RTTI to find Fixtures
