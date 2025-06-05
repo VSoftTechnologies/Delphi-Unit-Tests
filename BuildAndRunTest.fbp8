@@ -149,7 +149,7 @@ begin
         continuafailiftestserror = false
         continuafailiftestsfail = false
         continuaquiet = false
-        continuaregisterresults = true
+        continuaregisterresults = false
         continuaverbose = false
         enabletimeout = false
         expandimpersonationtoken = false
@@ -164,7 +164,7 @@ begin
         testexecutable = %SOURCEROOT%\\Output\\DelphiUnitTests.exe
         timeoutlength = 2
         useerrordialogmonitor = false
-        xmlloggertype = junit
+        xmlloggertype = nunit
         xmlreportfile = %SOURCEROOT%\\Output\\dunitxresults.xml
       end
     end
